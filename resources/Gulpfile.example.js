@@ -15,7 +15,7 @@ tastic(function (api) {
     .posts()
     .pages()
     .index()
-    .browserify('main.js')
+    .browserify('js/main.js')
     .serve();
 
   // gulp.task('deploy', function () {
