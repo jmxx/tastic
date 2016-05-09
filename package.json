@@ -30,6 +30,7 @@
     "inquirer": "^1.0.2",
     "lazypipe": "^1.0.1",
     "lodash": "^4.11.1",
+    "moment": "^2.13.0",
     "through2": "^2.0.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
