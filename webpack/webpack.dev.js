@@ -5,7 +5,9 @@ import baseConfig           from './webpack.common';
 
 Object.keys(baseConfig.entry).forEach(function (name) {
   // this module is required to make HRM working, it's responsible for all this webpack magic
-  baseConfig.entry[name] = ['./webpack/hot-client'].concat(baseConfig.entry[name]);
+  baseConfig.entry[name] = [
+    './webpack/hot-client'
+  ].concat(baseConfig.entry[name]);
 });
 
 export default merge(baseConfig, {

@@ -24,9 +24,21 @@ export default {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
+        },
+      },
+      {
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          cacheDirectory: true,
+          plugins: ['react-hot-loader/babel'],
         }
       }
     ]
+  },
+  node: {
+    fs: 'empty'
   },
   plugins: [
     new HtmlWebpackPlugin({

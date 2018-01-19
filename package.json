@@ -17,6 +17,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
+    "eventsource-polyfill": "^0.9.6",
     "express": "^4.16.2",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-loader": "^0.5.5",
@@ -28,5 +29,8 @@
     "webpack-dev-middleware": "^2.0.4",
     "webpack-hot-middleware": "^2.21.0",
     "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "react-hot-loader": "^4.0.0-beta.15"
   }
 }

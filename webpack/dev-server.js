@@ -9,7 +9,9 @@ const port = 3000;
 const app = express()
 const compiler = webpack(webpackConfig);
 const devMiddleware = webpackDevMiddleware(compiler, {
-
+  publicPath: webpackConfig.output.publicPath,
+  quiet: true,
+  stats: { colors: true }
 });
 const hotMiddleware = webpackHotMiddleware(compiler, {
   log: () => {}
